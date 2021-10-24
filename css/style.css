@@ -1,0 +1,468 @@
+/* ..... reset ..... */
+*{
+	font-family: sans-serif;
+	
+}
+
+/* ..... the main container ..... */
+.container{
+	width:1250px;
+	height:2800px;
+	margin:auto;
+	border:1px solid #353541;
+}
+
+/* resposnsive */
+
+/* small screens */
+
+
+
+/* ..... content's container ..... */
+.ccontainer{
+	width:77%;
+	margin:auto;
+}
+
+/* ..... the side bar ..... */
+aside{
+	width:270px;
+	height:2800px;
+	background-color: #353541;
+	float:left;
+	color:white;
+	margin-top:0px;
+	position: fixed;
+	border:1px solid #353541;
+}
+
+/* ..... the photo ..... */
+aside section{
+	background-image: url("../pics/avatar.jpg");
+	background-size: cover;
+	width:100%;
+	height:280px;
+	position: relative;
+}
+aside section img{
+	width:100%;
+	height:280px;
+
+}
+aside section h2{
+	margin:0px;
+	padding: 0px 0px 0px 20px;
+	font-size: 18px;
+	position: absolute;
+	top: 230px;
+
+}
+aside section p{
+	padding: 0px 0px 0px 20px;
+	font-size: 18px;
+	position: absolute;
+	top: 230px;
+}
+
+/* ..... the nav bar ..... */
+nav ul{
+	list-style: none;
+	padding:0px;
+	margin:0px;
+}
+
+nav li{
+	border-bottom:1px solid #282834;
+	padding:20px 0px 20px 30px ;
+	font-size:16pt;
+
+}
+nav li a{
+	text-decoration:none;
+	color:white;
+}
+/* ..... the content .....*/
+main{
+	width:79%;
+	height:2773px;
+	display:inline-block;
+	float:right;
+}
+
+/* ..... the cover .....*/
+header{
+	height:450px;
+	text-align:center;
+	background-image: url("../pics/lap.png");
+	background-size:cover;
+	color:white;
+
+}
+header h1{
+	padding:110px 0px 0px;
+	margin:0px 0px 10px;
+	font-size:40px;
+
+}
+header p{
+	padding:0px 0px 30px 0px;
+	font-family:sans-serif;
+	font-size:18px;
+	color:#B8B7BC;
+	margin-bottom:20px;
+
+}
+header button{
+	width: 170px;
+	height: 50px;
+	border-radius: 6px;
+	background-color:#FC6471;
+	border:none;
+	font-size:24px;
+	color:white;
+}
+/* ..... about me ..... */
+.about{
+	height:600px;
+}
+
+.text{
+	width:52%;
+	height: 100%;
+	display:inline-block;
+	float:left;
+
+}
+.title{
+	height:50%;
+	padding:80px 0px 20px;
+	color:#3E3E3E;
+}
+h2{
+	font-size:20pt;
+}
+h2 span {
+	border-bottom:2px solid #FC6471;
+	padding-bottom:10px
+}
+.details{
+	height:50%;
+	background-color: #F9F9F9;
+}
+.details *{
+	border-bottom:1px solid #E0E0E0;
+	padding:15px 0px ;
+	color:#6F6F6F;
+}
+.details :last-child{
+	border:none;
+
+}
+.details span{
+	color:black;
+}
+
+.pic{
+	height:100%;
+	width:40%;
+	display:inline-block;
+	float:left;
+	margin-left:20px;
+}
+.pic img{
+	width:320px;
+	height:460px;
+	padding:68px 0px 0px 40px;
+}
+hr {
+	color:#E5E5E5;
+	width:750px;
+	margin:auto;
+
+}
+
+/* ..... my education ..... */
+.education{
+	height:700px;
+	text-align: center;
+	list-style-position: inside;
+}
+.edu{
+	padding:40px 0px;
+	text-align:left;
+}
+
+
+.left{
+	width:40%;
+	height:500PX;
+	display:inline-block;
+	float:left;
+	margin:0px 30px 30px 0px;
+}
+.right{
+	width:40%;
+	height:500PX;
+	display:inline-block;
+	float:right;
+	margin:0px 0px 30px 30px;
+
+}
+.education li{
+	list-style-image: url("../pics/bullet.png");
+}
+.education p{
+	margin:7px;
+	color:#D7D7D9;
+}
+.education p span{
+	color:white;
+}
+
+.education .date{
+	color:#FD6572;
+}
+
+.b{
+	margin:7px 0px 118px;
+}
+.u{
+	margin-bottom: 60px;
+
+}
+.l{
+	margin-bottom: 119px;
+	
+}
+.t{
+	margin-bottom: 100px;
+	
+}
+.speech-bubble {
+	position: relative;
+	background: #353541;
+	border-radius: .4em;
+}
+
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 0;
+	height: 0;
+	border: 42px solid transparent;
+	border-right-color: #393949;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -15px;
+	margin-left: -35px;
+}
+.speech-bubblel {
+	position: relative;
+	background: #353541;
+	border-radius: .4em;
+}
+
+.speech-bubblel:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 70%;
+	width: 0;
+	height: 0;
+	border: 42px solid transparent;
+	border-left-color: #353541;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -15px;
+	margin-right: -35px;
+}
+
+.bachelor{
+	width:300px;
+	height:100px;
+	background-color:#353541;
+	text-align: left;
+	margin-bottom:150px;
+	padding: 10px;
+
+}
+.langs{
+	width:300px;
+	height:100px;
+	background-color:#353541;
+	text-align: left;
+	margin:70px 0px 150px;
+	padding: 10px;
+
+}
+.front{
+	width:300px;
+	height:100px;
+	background-color:#353541;
+	text-align: left;
+	padding: 10px;
+}
+.back{
+	width:300px;
+	height:100px;
+	background-color:#353541;
+	text-align: left;
+	padding: 10px;
+}
+/* ..... my skills ..... */
+.skills{
+	height:450px;
+	background-color:#1D1E23;
+	color:white;
+}
+
+
+.skills h2{
+	padding: 70px 0px 10px;
+	color:white;
+}
+
+.skills .prog{
+	height:10px;
+	width:250px;
+	background-color:#BCBCBE;
+}
+.skills .item{
+	display:inline-block;
+	margin:25px 120px 25px 0px;
+
+}
+
+
+
+/* ..... contact ..... */
+.contact{
+	height:450px;
+
+}
+
+.msg{
+	width:40%;
+	display:inline-block;
+	float:left;
+}
+
+.msg *{
+	display:block;
+	margin:15px 0px;
+}
+.msg h3{
+	margin:30px 0px 20px;
+	color:#3E3E3E
+	
+}
+
+.msg input{
+	width:80%;
+	padding:10px;
+	border:1px solid black;
+}
+textarea{
+	width:80%;
+	height:100px;
+	padding:10px;
+	border:1px solid black;
+}
+.msg button{
+	float:right;
+	margin-right:37px;
+	margin-top:0px;
+	width:120px;
+	padding:7px;
+	background-color:#FC6471;
+	border:0;
+	color:white;
+	
+}
+.inf{
+	display:inline-block;
+	margin:0px 0px 0px 50px;
+	border-left:1px solid #CCCCCC; 
+}
+.inf li{
+	margin:30px 70px;
+	padding:;
+}
+.inf h3{
+	margin:0px;
+	padding:0px;
+	color:#3E3E3E
+}
+.inf p{
+	color:#666666;
+}
+
+.contact hr{
+	margin:90px 0px;
+}
+
+/* ..... the footer ..... */
+footer{
+	height:100px;
+	background-color: white;
+	text-align:center;
+
+}
+footer img{
+	padding:0px 10px;
+	margin:20px 0px 10px;
+}
+footer .git{
+	border:1px solid #666666;
+	border-top:none;
+	border-bottom:none;
+}
+footer p{
+	margin:0px;
+	color:#666666;
+}
+
+
+@media only screen and (max-width: 500px) {
+  aside {
+    display: none;
+  
+  }
+  .container{
+  	width: 500px
+  }
+  main{
+  	width: 100%
+  }
+  .pic{
+  	display: none;
+  }
+  .text{
+  	width: 100%
+  }
+  hr{
+  	width:425px
+  }
+  .education{
+  	min-height: 700px
+  }
+  .education ul{
+  	display: none;
+  }
+ .left, .right{
+  	width:100%;
+	height:250px;
+	display:block;
+	float:left;
+	margin:0px;
+ }
+.bachelor, .fron, .back, .langs{
+ 	margin: 0px;
+ }
+.right div{
+	margin: 0px;
+}
+} 

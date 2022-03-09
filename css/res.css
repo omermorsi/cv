@@ -1,0 +1,152 @@
+@media screen and (max-width: 768px) {
+	/* Start Sidebar */
+	/* Make navbar horizontal */
+	.navbar{
+		width: 100%;
+		height: 16.66% !important;
+	}
+
+	/* Hide Photo & Job title */
+	aside{
+		display: none !important;
+	}
+
+	/* The navbar */
+	nav{
+		height: 100%;
+	}
+	/* Open & close button */
+	nav a:first-child{
+		position: static;
+		display: block;
+		float: right;
+		transform: none;
+		height: 100%;
+		width: 20%;
+		padding: 30px 20px 30px 20px !important;
+		text-align: center
+	}
+	/* Links */
+	nav a:not(:first-child){
+		display: none;
+	}
+	nav a:nth-child(2){
+		display: block !important;
+		padding: 45px 20px 45px 20px !important;
+		width: 80%;
+		height: 100%;
+		transform: none;
+		border: none
+	}
+	nav a:first-child li{
+		position: static;
+	}
+	nav a:first-child i{
+		padding-top: 30px;
+	}
+
+	/* When clicked */
+	/* Open nav & show links */
+	.open{
+		height: 100vh;
+	}
+	.showlinks{
+		display: block !important;
+		height: 16.66% !important;
+	}
+	/* End Sidebar */
+
+	/* The content */
+    main{
+		width: 100%;
+	}
+	
+	/* Start About me */
+	/* Informations About me */
+	.text{
+		display: block;
+		width: 100%;
+        margin-bottom: 20px
+	}
+    .title{
+        padding: 0
+    }
+
+	/* My photo */
+	.pic{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 20px 0;
+        float: none
+	}
+    .pic img{
+        width: 100%;
+        height: 100%;
+        padding: 0
+    }
+	/* End About me */
+
+	/* Start Education */
+	/* Place the eduflow to the left */
+	.eduflow::after {
+		left: 31px
+	}
+	/* Full-width containers */
+	.course {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px
+	}
+	/* Make sure that all arrows are pointing leftwards */
+	.course::before {
+		left: 60px;
+		border: medium solid #353541;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent #353541 transparent transparent
+	}
+	/* Make sure all circles are at the same spot */
+	.left::after, .right::after {
+		left: 15px
+	}	
+	/* Make all right containers behave like the left ones */
+	.right {
+		left: 0%
+	}
+	/* End education */
+
+	/* Start Skills */
+	.skills .skill{
+		width: 97%;
+	}
+	/* End skills */
+
+	/* Start Contact */
+	.row{
+		display: block
+	}
+	.msg{
+		width: 100%
+	}
+	.msg input{
+		width: 100%	
+	}
+	.msg input:last-child{
+		margin: 0
+	}
+	.msg textarea{
+		width: 100%
+	}
+	.inf{
+		width: 100%;
+		margin: 0;
+		border: none;
+	}
+	.inf ul{
+		margin-left: 0
+	}
+	.inf li{
+		float: left
+	}
+	/* End contact */
+}

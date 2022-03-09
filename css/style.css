@@ -1,468 +1,441 @@
-/* ..... reset ..... */
-*{
-	font-family: sans-serif;
-	
+/* Start General settings */
+* {
+	font-family: 'raleway';	
+	box-sizing: border-box
 }
-
-/* ..... the main container ..... */
+ul {
+	list-style: none
+}
+a{
+	text-decoration: none
+}
+hr {
+	color:#E5E5E5;
+	width: 90%;
+	margin: 0 auto
+}
+/* Underlined span to headers */
+h2 span {
+	border-bottom:2px solid #FC6471;
+	padding-bottom:10px
+}
+/* Container */
 .container{
-	width:1250px;
-	height:2800px;
-	margin:auto;
-	border:1px solid #353541;
+	width: 90%;
+	margin: auto
 }
-
-/* resposnsive */
-
-/* small screens */
-
-
-
-/* ..... content's container ..... */
-.ccontainer{
-	width:77%;
-	margin:auto;
+/* Opacity background */
+.opaback{
+	height: 100%;
+	width: 100%;
+	background-color: #0005
 }
+/* Main background color */
+.bgcol{
+	background-color: #353541
+}
+/* Colors */
+.whitecol{
+	color: #fff
+}
+.silvercol{
+	color: #B8B7BC
+}
+.blackcol{
+	color: #000
+}
+.pinkcol{
+	color: #FC6471 !important
+}
+/* End General settings */
 
-/* ..... the side bar ..... */
-aside{
-	width:270px;
-	height:2800px;
-	background-color: #353541;
-	float:left;
-	color:white;
-	margin-top:0px;
+/* Start Sidebar */
+.navbar{
 	position: fixed;
-	border:1px solid #353541;
+	height: 100vh;
+	width: 20%;
+	z-index: 2
 }
-
-/* ..... the photo ..... */
-aside section{
-	background-image: url("../pics/avatar.jpg");
-	background-size: cover;
-	width:100%;
-	height:280px;
+/* Photo & Job title */
+aside{
+	height:33%;
 	position: relative;
+	background-image: url("../pics/avatar.jpg");
+	background-size: cover
 }
-aside section img{
-	width:100%;
-	height:280px;
-
-}
-aside section h2{
-	margin:0px;
-	padding: 0px 0px 0px 20px;
-	font-size: 18px;
+aside .intro{
 	position: absolute;
-	top: 230px;
-
+	bottom: 8%
 }
-aside section p{
-	padding: 0px 0px 0px 20px;
-	font-size: 18px;
-	position: absolute;
-	top: 230px;
+aside h2,p{
+	margin:0
 }
 
-/* ..... the nav bar ..... */
+/* The navbar */
+nav{
+	height:67%;
+}
 nav ul{
-	list-style: none;
-	padding:0px;
-	margin:0px;
+	height: 100%;
+	padding: 0px;
+	margin: 0px
 }
-
+nav a{
+	height: 16.66%;
+	display: block;
+	position: relative;
+	color: #fff;
+	border-top: 2px solid #282834;
+	padding: 0 0 0 20px 
+}
+.active{
+	background-color: #FC6471
+}
+/* Open & close button */
+nav a:first-child{
+	display: none;
+	border: none
+}
+nav a:hover{
+	background-color: #FC6471
+}
 nav li{
-	border-bottom:1px solid #282834;
-	padding:20px 0px 20px 30px ;
-	font-size:16pt;
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.5em
+}
+/* End Sidebar */
 
-}
-nav li a{
-	text-decoration:none;
-	color:white;
-}
-/* ..... the content .....*/
+/* The content */
 main{
-	width:79%;
-	height:2773px;
-	display:inline-block;
-	float:right;
+	width:80%;
+	float: right
 }
 
-/* ..... the cover .....*/
+/* Start cover */
 header{
-	height:450px;
+	max-height: 600px;
 	text-align:center;
 	background-image: url("../pics/lap.png");
-	background-size:cover;
-	color:white;
-
+	background-size:cover
 }
 header h1{
 	padding:110px 0px 0px;
-	margin:0px 0px 10px;
-	font-size:40px;
-
+	margin:0 0 20px 0;
+	font-size:40px
 }
 header p{
-	padding:0px 0px 30px 0px;
-	font-family:sans-serif;
-	font-size:18px;
-	color:#B8B7BC;
-	margin-bottom:20px;
-
+	width: 80%;
+	padding:0px 0px 20px 0px;
+	margin: 0 auto;
+	font-size:18px
 }
 header button{
 	width: 170px;
 	height: 50px;
 	border-radius: 6px;
 	background-color:#FC6471;
-	border:none;
-	font-size:24px;
-	color:white;
+	border: none;
+	cursor: pointer;
+	font-size: 24px;
+	margin: 0 0 110px 0
 }
-/* ..... about me ..... */
+/* End cover */
+
+/* Start About me */
 .about{
-	height:600px;
+	min-height:600px
 }
 
+/* Informations about me */
 .text{
 	width:52%;
 	height: 100%;
-	display:inline-block;
-	float:left;
-
+	float:left
 }
 .title{
 	height:50%;
 	padding:80px 0px 20px;
-	color:#3E3E3E;
+	color:#3E3E3E
 }
 h2{
-	font-size:20pt;
-}
-h2 span {
-	border-bottom:2px solid #FC6471;
-	padding-bottom:10px
+	font-size:20pt
 }
 .details{
 	height:50%;
-	background-color: #F9F9F9;
+	background-color: #F9F9F9
 }
 .details *{
 	border-bottom:1px solid #E0E0E0;
 	padding:15px 0px ;
-	color:#6F6F6F;
+	color:#6F6F6F
 }
 .details :last-child{
-	border:none;
-
+	border:none
 }
 .details span{
-	color:black;
+	color:black
 }
 
+/* My photo */
 .pic{
-	height:100%;
-	width:40%;
-	display:inline-block;
+	height:600px;
+	width:46%;
 	float:left;
-	margin-left:20px;
+	margin-left: 2%
 }
 .pic img{
-	width:320px;
-	height:460px;
-	padding:68px 0px 0px 40px;
+	width:100%;
+	height: 80%;
+	padding: 130px 0 0 0
 }
-hr {
-	color:#E5E5E5;
-	width:750px;
-	margin:auto;
+/* End about me */
 
-}
-
-/* ..... my education ..... */
-.education{
-	height:700px;
-	text-align: center;
-	list-style-position: inside;
-}
-.edu{
-	padding:40px 0px;
-	text-align:left;
+/* Start Education */
+h2{
+	padding: 80px 0 40px
 }
 
-
-.left{
-	width:40%;
-	height:500PX;
-	display:inline-block;
-	float:left;
-	margin:0px 30px 30px 0px;
-}
-.right{
-	width:40%;
-	height:500PX;
-	display:inline-block;
-	float:right;
-	margin:0px 0px 30px 30px;
-
-}
-.education li{
-	list-style-image: url("../pics/bullet.png");
-}
-.education p{
-	margin:7px;
-	color:#D7D7D9;
-}
-.education p span{
-	color:white;
-}
-
-.education .date{
-	color:#FD6572;
-}
-
-.b{
-	margin:7px 0px 118px;
-}
-.u{
-	margin-bottom: 60px;
-
-}
-.l{
-	margin-bottom: 119px;
-	
-}
-.t{
-	margin-bottom: 100px;
-	
-}
-.speech-bubble {
+.eduflow {
 	position: relative;
-	background: #353541;
-	border-radius: .4em;
+	margin: 0 auto
 }
-
-
-.speech-bubble:after {
+  
+/* The line in the middle */
+.eduflow::after {
 	content: '';
 	position: absolute;
-	left: 0;
-	top: 30%;
-	width: 0;
-	height: 0;
-	border: 42px solid transparent;
-	border-right-color: #393949;
-	border-left: 0;
-	border-top: 0;
-	margin-top: -15px;
-	margin-left: -35px;
-}
-.speech-bubblel {
-	position: relative;
-	background: #353541;
-	border-radius: .4em;
+	width: 1px;
+	background-color: #353541;
+	top: 20px;
+	bottom: 20px;
+	left: 50%
 }
 
-.speech-bubblel:after {
+/* The boxes */
+.course {
+	padding: 10px 40px;
+	position: relative;
+	width: 50%
+}
+
+/* The circles */
+.course::after {
 	content: '';
 	position: absolute;
-	right: 0;
-	top: 70%;
-	width: 0;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: #353541;
+	border: 4px solid #FC6471;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1
+}
+/* Make the last arrow bottom */
+.course:last-child::after{
+	top: auto;
+	bottom: 15px
+}
+
+/* The left boxes */
+.left {
+	left: 0
+}
+
+/* The right boxes */
+.right {
+	left: 50%
+}
+
+/* Add arrows to the left box */
+.left::before {
+	content: " ";
 	height: 0;
-	border: 42px solid transparent;
-	border-left-color: #353541;
-	border-right: 0;
-	border-bottom: 0;
-	margin-top: -15px;
-	margin-right: -35px;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid #353541;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent #353541
 }
 
-.bachelor{
-	width:300px;
-	height:100px;
-	background-color:#353541;
-	text-align: left;
-	margin-bottom:150px;
-	padding: 10px;
+/* Add arrows to the right box */
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid #353541;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #353541 transparent transparent
+}
+.left:last-child::before{
+	top: auto;
+	bottom: 22px
+}
+/* Make the last arrow bottom */
+.right:last-child::before{
+	top: auto;
+	bottom: 22px
+}
 
+/* Fix the circle for right box */
+.right::after {
+	left: -16px
 }
-.langs{
-	width:300px;
-	height:100px;
-	background-color:#353541;
-	text-align: left;
-	margin:70px 0px 150px;
-	padding: 10px;
 
+/* The actual content */
+.infos {
+	padding: 20px 30px;
+	color: white;
+	background-color: #353541;
+	position: relative;
+	border-radius: 6px
 }
-.front{
-	width:300px;
-	height:100px;
-	background-color:#353541;
-	text-align: left;
-	padding: 10px;
+.infos h3 {
+	font-weight: bold
 }
-.back{
-	width:300px;
-	height:100px;
-	background-color:#353541;
-	text-align: left;
-	padding: 10px;
+.infos h3 span{
+	color: #d7d7d9;
+	font-weight: 300
 }
-/* ..... my skills ..... */
+.infos p{
+	color: #c9c9cc
+}
+/* End education */
+
+/* Start skills */
 .skills{
-	height:450px;
-	background-color:#1D1E23;
-	color:white;
+	min-height: 350px;
+	background-color:#1D1E23
 }
-
 
 .skills h2{
-	padding: 70px 0px 10px;
-	color:white;
+	padding: 70px 0px 10px
 }
-
-.skills .prog{
-	height:10px;
-	width:250px;
-	background-color:#BCBCBE;
+/* Skill progress */
+.skills .skill{
+	float: left;
+	width: 47%;
+	margin: 40px 3% 0 0
 }
-.skills .item{
-	display:inline-block;
-	margin:25px 120px 25px 0px;
-
+/* progress bar */
+.prog {
+	width: 100%;
+	height: 5px;  
+	position: relative;
+	background-color: #d7d7d9
 }
-
-
-
-/* ..... contact ..... */
-.contact{
-	height:450px;
-
+/* progress level */
+.prog span {
+	display: block;
+	height: 100%;
+	background-color: #fb6470;
+	position: relative
 }
+/* The circle  */
+.prog > span::after{
+	content: '';
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	right: -17px;
+	background-color: #fb6470;
+	top: -7px;
+	border-radius: 50%
+}
+/* Clear to make section's height taller than content */
+.clear{
+	clear: both;
+	margin-bottom: 50px
+}
+/* End skills */
 
+/* Start contact */
+.row{
+	display: flex
+}
+/* The form to send msg */
 .msg{
-	width:40%;
-	display:inline-block;
-	float:left;
+	margin-top: 60px;
+	flex: 1
 }
-
 .msg *{
 	display:block;
 	margin:15px 0px;
+	overflow: auto;
 }
 .msg h3{
-	margin:30px 0px 20px;
-	color:#3E3E3E
-	
+	margin:0px 0px 20px;
+	color:#3E3E3E	
 }
-
 .msg input{
 	width:80%;
 	padding:10px;
-	border:1px solid black;
+	border:1px solid black
 }
 textarea{
 	width:80%;
 	height:100px;
 	padding:10px;
-	border:1px solid black;
+	border:1px solid black
 }
-.msg button{
+/* Send bottun */
+.msg input:last-child{
 	float:right;
-	margin-right:37px;
-	margin-top:0px;
-	width:120px;
-	padding:7px;
+	margin-right: 20%;
+	margin-top: 0;
+	width: 120px;
+	padding: 7px;
 	background-color:#FC6471;
-	border:0;
-	color:white;
-	
+	border: none;
+	cursor: pointer;
 }
+/* Contact info */
 .inf{
-	display:inline-block;
-	margin:0px 0px 0px 50px;
+	margin:60px 0px 0px 0px;
 	border-left:1px solid #CCCCCC; 
+	flex: 1
 }
 .inf li{
-	margin:30px 70px;
-	padding:;
+	margin: 30px
 }
 .inf h3{
-	margin:0px;
-	padding:0px;
-	color:#3E3E3E
+	margin: 0;
+	padding: 0
 }
 .inf p{
 	color:#666666;
 }
 
 .contact hr{
-	margin:90px 0px;
+	clear: both;
 }
+/* End contact */
 
-/* ..... the footer ..... */
+/* Start footer */
 footer{
 	height:100px;
-	background-color: white;
-	text-align:center;
-
+	text-align: center
 }
-footer img{
-	padding:0px 10px;
-	margin:20px 0px 10px;
+footer i{
+	margin:20px;
 }
-footer .git{
+footer:nth-child(2){
 	border:1px solid #666666;
 	border-top:none;
-	border-bottom:none;
+	border-bottom:none
 }
 footer p{
-	margin:0px;
-	color:#666666;
+	margin: 0;
+	color:#666666
 }
-
-
-@media only screen and (max-width: 500px) {
-  aside {
-    display: none;
-  
-  }
-  .container{
-  	width: 500px
-  }
-  main{
-  	width: 100%
-  }
-  .pic{
-  	display: none;
-  }
-  .text{
-  	width: 100%
-  }
-  hr{
-  	width:425px
-  }
-  .education{
-  	min-height: 700px
-  }
-  .education ul{
-  	display: none;
-  }
- .left, .right{
-  	width:100%;
-	height:250px;
-	display:block;
-	float:left;
-	margin:0px;
- }
-.bachelor, .fron, .back, .langs{
- 	margin: 0px;
- }
-.right div{
-	margin: 0px;
-}
-} 
+/* End footer */

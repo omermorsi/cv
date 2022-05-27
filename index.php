@@ -71,11 +71,11 @@
 		<!-- Start About me -->
 		<section class="about" id="aboutme">
 			<div class="container">
-				<?php echo "This is from php" ?>
+				
 				<!-- Informations about me -->
 				<div class="text">
 					<div class="title">
-						<h2><span>About</span> Me</h2>
+						<h2><span>About</span> Me</h2><?php echo "This is from php" ?>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni itaque quam a
 							accusamus consectetur necessitatibus 
 						</p>

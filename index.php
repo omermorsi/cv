@@ -71,6 +71,7 @@
 		<!-- Start About me -->
 		<section class="about" id="aboutme">
 			<div class="container">
+				<?php echo "This is from php" ?>
 				<!-- Informations about me -->
 				<div class="text">
 					<div class="title">
